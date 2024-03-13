@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Universe Hub</title>
+   
+<link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.3/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://kit.fontawesome.com/5b5f613ef9.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <header class="text-center">
+    <h1 class=" text-5xl m-5 font-bold text-yellow-600">AI Universe Hub</h1>
+    <button class="bg-yellow-600 text-black  font-bold text-2xl px-16 
+     rounded-lg">Sort By Date</button>
+  </header>
+  <main class=" mt-8  mx-32">
+    <section id="tool-container" class="grid grid-cols-3">
+
+
+     
+
+    </section>
+    <div id="features-field">
+
+    </div>
+    
+<dialog id="show_details_modal" class="modal modal-bottom sm:modal-middle">
+  <div class="modal-box">
+    <h3 id="show-detail-phone-name" class="font-bold text-3xl"></h3>
+    <div id="show-detail-container">
+      
+    </div>
+    <div class="modal-action">
+      <form method="dialog">
+        <!-- if there is a button in form, it will close the modal -->
+        <button class="btn">Close</button>
+      </form>
+    </div>
+  </div>
+</dialog>
+  </main>
+  <script src="./index.js"></script>
+</body>
+</html>
