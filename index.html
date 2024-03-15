@@ -8,39 +8,98 @@
 <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.3/dist/full.min.css" rel="stylesheet" type="text/css" />
 <script src="https://cdn.tailwindcss.com"></script>
 <script src="https://kit.fontawesome.com/5b5f613ef9.js" crossorigin="anonymous"></script>
+
+<!-- google Font -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+<!-- Styles  -->
+<style>
+  .work-sans-font{
+    font-family: "Work Sans", sans-serif;
+  }
+</style>
 </head>
-<body>
+
+
+<body class="work-sans-font">
+
   <header class="text-center">
-    <h1 class=" text-5xl m-5 font-bold text-yellow-600">AI Universe Hub</h1>
-    <button class="bg-yellow-600 text-black  font-bold text-2xl px-16 
+    <h1 class=" lg:text-5xl text-2xl m-5 font-bold text-yellow-600">AI Universe Hub</h1>
+    <button class="bg-yellow-600 text-black font-semibold  lg:font-bold text-xl lg:text-2xl lg:px-16 px-5 
      rounded-lg">Sort By Date</button>
   </header>
-  <main class=" mt-8  mx-32">
-    <section id="tool-container" class="grid grid-cols-3">
 
 
-     
+  <main class="lg:container mt-8 lg:mx-auto mx-6">
+    <div id="tool-container"  class="grid lg:grid-cols-3 grid-cols-1 md:grid-cols-2 md:gap-4"></div>
 
-    </section>
-    <div id="features-field">
-
-    </div>
     
-<dialog id="show_details_modal" class="modal modal-bottom sm:modal-middle">
-  <div class="modal-box">
-    <h3 id="show-detail-phone-name" class="font-bold text-3xl"></h3>
-    <div id="show-detail-container">
-      
-    </div>
-    <div class="modal-action">
+
+   <dialog id="show_details_modal" class="modal rounded-[28px] pb-0 h-[86%]">
+    <div class="bg-white lg:w-[60%] mt-0 lg:h-[80%] modal-box max-w-5xl">
       <form method="dialog">
-        <!-- if there is a button in form, it will close the modal -->
-        <button class="btn">Close</button>
+        <button class="btn btn-sm btn-circle btn-ghost  absolute 
+        right-2 rop-2 border-none py-3 bg-[#EB5757] rounded-full 
+        px-3 text-white font-semibold text- 
+         2xl">✕</button>
       </form>
+      <div id="show-detail-container"></div>
     </div>
-  </div>
-</dialog>
+  </dialog>
+
   </main>
+
+  <!-- modal-box -->
+  <!-- div start -->
+
+  
+  <!-- <div class="flex w-1/2 justify-between items-center mx-auto my-44">
+    <div class="flex flex-col w-1/2">
+      <h2 class="text-4xl">${tools.description}</h2>
+       <div class="flex justify-between gap-5 my-9">
+        <div class="bg-pink-200 p-3 rounded-2xl text-center">
+          <p>$10/ month Basic</p>
+        </div>
+        <div class="bg-pink-200 p-3 rounded-2xl text-center">
+          <p>$50/ month Pro</p>
+        </div>
+        <div class="bg-pink-200 p-3 rounded-2xl text-center">
+          <p>Contact us Enterprise</p>
+        </div>
+  
+       </div>
+  
+       <div class="flex justify-between">
+        <div>
+          <h2 class="text-3xl">Features</h2>
+          <ul>
+            <li>Customizable responses</li>
+            <li>Multilingual support</li>
+            <li>Seamless integration</li>
+          </ul>
+        </div>
+        <div>
+          <h2 class="text-3xl">Integrations</h2>
+          <ul>
+            <li>FB Messenger</li>
+            <li>Stack</li>
+            <li>Telegram</li>
+          </ul>
+        </div>
+       </div>
+    </div>
+    <div>
+      <img src="${tools.image}" alt="">
+      <h2 class="text-2xl">Hi, How are you doing today?</h2>
+      <p class="text-center">I'm doing well,thank you for asking.How can I <br> Assist you today?</p>
+    </div>
+  </div> -->
+
+
+
+  <!-- div end -->
   <script src="./index.js"></script>
 </body>
 </html>
